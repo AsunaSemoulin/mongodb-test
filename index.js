@@ -9,7 +9,6 @@ const uri = `mongodb+srv://${MONGO_USER}:${MONGO_PW}@${MONGO_DB}.lropz.mongodb.n
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 
 client.connect(err => {
-  const collection = client.db(`${MONGO_DB}`);
   // perform actions on the collection object
   client.close();
 });
